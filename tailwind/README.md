@@ -1,5 +1,0 @@
-# Tailwind
-
-## PROS
-
-## CONS
