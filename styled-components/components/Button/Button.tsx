@@ -6,12 +6,7 @@ export enum ButtonType {
   SECONDARY
 }
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  title: string;
-  buttonType: ButtonType;
-}
-
-const MainButton = styled.button<{ buttonType: ButtonType; theme: Theme }>`
+const Button = styled.button<{ buttonType: ButtonType; theme: Theme }>`
   position: relative;
   display: block;
   padding: 1rem 2rem 0.85rem 2rem;
@@ -36,19 +31,5 @@ const MainButton = styled.button<{ buttonType: ButtonType; theme: Theme }>`
     box-shadow: 0 0 0 1px black, 0 11px 0 0 black;
   }
 `;
-
-MainButton.defaultProps = {
-  buttonType: ButtonType.PRIMARY
-};
-
-const Button = (props: ButtonProps) => {
-  const { title, buttonType, ...rest } = props;
-
-  return (
-    <MainButton buttonType={buttonType} {...rest}>
-      {title}
-    </MainButton>
-  );
-};
 
 export default Button;

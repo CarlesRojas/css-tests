@@ -49,19 +49,13 @@ const Home = () => {
         <Text>{message}</Text>
 
         <Buttons>
-          <Button
-            title="Nope"
-            buttonType={ButtonType.SECONDARY}
-            type="button"
-            onClick={() => setMessage('You hate Stitches')}
-          />
+          <Button buttonType={ButtonType.SECONDARY} type="button" onClick={() => setMessage('You hate Stitches')}>
+            Nope
+          </Button>
 
-          <Button
-            title="Love it"
-            buttonType={ButtonType.PRIMARY}
-            type="button"
-            onClick={() => setMessage('You love Stitches')}
-          />
+          <Button buttonType={ButtonType.PRIMARY} type="button" onClick={() => setMessage('You love Stitches')}>
+            Love it
+          </Button>
         </Buttons>
       </Section>
     </Main>

@@ -50,18 +50,20 @@ const Home = () => {
 
         <Buttons>
           <Button
-            title="Nope"
             buttonType={ButtonType.SECONDARY}
             type="button"
             onClick={() => setMessage('You hate Styled Components')}
-          />
+          >
+            Nope
+          </Button>
 
           <Button
-            title="Love it"
             buttonType={ButtonType.PRIMARY}
             type="button"
             onClick={() => setMessage('You love Styled Components')}
-          />
+          >
+            Love it
+          </Button>
         </Buttons>
       </Section>
     </Main>
