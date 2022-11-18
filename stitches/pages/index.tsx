@@ -34,7 +34,6 @@ const Text = styled('p', {
 
 const Buttons = styled('div', {
   display: 'flex',
-  justifyContent: 'space-between',
   width: '100%',
   gap: '1.5rem'
 });

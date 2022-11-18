@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
+import { Theme } from './theme';
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
   * {
     box-sizing: border-box;
     margin: 0;
@@ -21,10 +22,10 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
     height: 100%;
     width: 100%;
-    background-color: #1e212c;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    background-color: ${({ theme }) => theme.color.background};
+    color: ${({ theme }) => theme.color.text};
+    font-family: ${({ theme }) => theme.font.main};
+    font-size: ${({ theme }) => theme.fontSize.main};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -56,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 1000px;
     padding: 0;
     font-size: 1rem;
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: ${({ theme }) => theme.color.text};
   }
 
   button {

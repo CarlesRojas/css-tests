@@ -36,7 +36,6 @@ const style = {
 
   buttons: css({
     display: 'flex',
-    justifyContent: 'space-between',
     width: '100%',
     gap: '1.5rem'
   })
