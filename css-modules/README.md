@@ -2,4 +2,6 @@
 
 ## PROS
 
+- CSS linting and sass support
+
 ## CONS
