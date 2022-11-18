@@ -1,4 +1,5 @@
 import { Head, Html, Main, NextScript } from 'next/document';
+import { getCssText } from '../styles/stitches.config';
 
 export default function Document() {
   return (
@@ -12,6 +13,8 @@ export default function Document() {
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="theme-color" content="#000000" />
+
+        <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
       </Head>
 
       <body>

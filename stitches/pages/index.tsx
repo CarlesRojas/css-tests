@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Button, { ButtonType } from '../components/Button/Button';
-import { styled } from '../styles/theme';
+import { styled } from '../styles/stitches.config';
 
 const Main = styled('main', {
   position: 'relative',

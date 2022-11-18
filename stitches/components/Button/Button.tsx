@@ -1,4 +1,4 @@
-import { styled } from '../../styles/theme';
+import { styled } from '../../styles/stitches.config';
 
 export enum ButtonType {
   PRIMARY,
