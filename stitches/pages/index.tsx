@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Button, { ButtonType } from '../components/Button/Button';
 
 const Home = () => {
-  const [message, setMessage] = useState('Click any button');
+  const [message, setMessage] = useState('Do you like Stitches?');
 
   return (
     <main>
@@ -13,17 +13,17 @@ const Home = () => {
 
         <div>
           <Button
-            title="Cancel"
+            title="Nope"
             buttonType={ButtonType.SECONDARY}
             type="button"
-            onClick={() => setMessage('You clicked Cancel')}
+            onClick={() => setMessage('You hate Stitches')}
           />
 
           <Button
-            title="Continue"
+            title="Love it"
             buttonType={ButtonType.PRIMARY}
             type="button"
-            onClick={() => setMessage('You clicked Continue')}
+            onClick={() => setMessage('You love Stitches')}
           />
         </div>
       </section>
