@@ -17,10 +17,10 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: #1e212c;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  background-color: var(--backgroundcolor);
+  color: var(--textColor);
+  font-family: var(--font);
+  font-size: var(--fontSize);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -52,7 +52,7 @@ a {
   border-radius: 1000px;
   padding: 0;
   font-size: 1rem;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: var(--textColor);
 }
 
 button {

@@ -3,7 +3,7 @@ import Button, { ButtonType } from '../components/Button/Button';
 import s from './index.module.scss';
 
 const Home = () => {
-  const [message, setMessage] = useState('Click any button');
+  const [message, setMessage] = useState('Do you like CSS Modules?');
 
   return (
     <main className={s.home}>
@@ -14,17 +14,17 @@ const Home = () => {
 
         <div>
           <Button
-            title="Cancel"
+            title="Nope"
             buttonType={ButtonType.SECONDARY}
             type="button"
-            onClick={() => setMessage('You clicked Cancel')}
+            onClick={() => setMessage('You hate CSS modules')}
           />
 
           <Button
-            title="Continue"
+            title="Love it"
             buttonType={ButtonType.PRIMARY}
             type="button"
-            onClick={() => setMessage('You clicked Continue')}
+            onClick={() => setMessage('You love CSS modules')}
           />
         </div>
       </section>
