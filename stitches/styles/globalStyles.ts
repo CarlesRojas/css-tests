@@ -1,4 +1,4 @@
-import { globalCss } from '@stitches/react';
+import { globalCss } from './theme';
 
 const globalStyles = globalCss({
   '*': {
@@ -12,7 +12,8 @@ const globalStyles = globalCss({
   html: {
     position: 'relative',
     height: '100%',
-    width: '100%'
+    width: '100%',
+    fontSize: '$main'
   },
 
   body: {
@@ -20,10 +21,10 @@ const globalStyles = globalCss({
     position: 'relative',
     height: '100%',
     width: '100%',
-    backgroundColor: '#1e212c',
-    color: 'white',
-    fontFamily: "'Montserrat', sans-serif",
-    fontSize: '16px',
+    backgroundColor: '$backgroundcolor',
+    color: '$textColor',
+    fontFamily: '$main',
+    fontSize: '$main',
     '-webkit-font-smoothing': 'antialiased',
     '-moz-osx-font-smoothing': 'grayscale'
   },
@@ -51,7 +52,7 @@ const globalStyles = globalCss({
     borderRadius: '1000px',
     padding: 0,
     fontSize: '1rem',
-    '-webkit-text-fill-color': 'white'
+    '-webkit-text-fill-color': '$textColor'
   },
 
   button: {

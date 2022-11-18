@@ -3,16 +3,6 @@ import { css, Global } from '@emotion/react';
 const globalStyles = (
   <Global
     styles={css`
-      :root {
-        --backgroundcolor: #1e212c;
-        --textColor: white;
-        --primaryColor: #00aaff;
-
-        --fontSize: 16px;
-
-        --font: 'Montserrat', sans-serif;
-      }
-
       * {
         box-sizing: border-box;
         margin: 0;
@@ -25,6 +15,7 @@ const globalStyles = (
         position: relative;
         height: 100%;
         width: 100%;
+        font-size: var(--fontSize);
       }
 
       body {
@@ -32,10 +23,10 @@ const globalStyles = (
         position: relative;
         height: 100%;
         width: 100%;
-        background-color: #1e212c;
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
+        background-color: var(--backgroundcolor);
+        color: var(--textColor);
+        font-family: var(--font);
+        font-size: var(--fontSize);
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
@@ -67,7 +58,7 @@ const globalStyles = (
         border-radius: 1000px;
         padding: 0;
         font-size: 1rem;
-        -webkit-text-fill-color: white;
+        -webkit-text-fill-color: var(--textColor);
       }
 
       button {
